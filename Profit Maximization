@@ -1,0 +1,24 @@
+def profit_maximization (imput):
+
+  # To do the new list, only stocks #
+  for x in range(1,len(imput)):
+    stocks.append(imput[x])
+
+  # Check the higgest stock and defines a "buy day" #
+  low_price = stocks[1]
+  buy_day = 1
+  for i in range(len(stocks)):
+    if stocks[i] < low_price:
+      low_price = stocks[i]
+      buy_day = i
+  j = buy_day
+  high_price = low_price
+  
+  # Check the higgest stock #
+  while j < len(stocks):
+    if stocks[j] > high_price:
+      high_price = stocks[j]
+      j += 1   
+      
+  maximum_profit = high_price - low_price
+  return(maximum_profit)
