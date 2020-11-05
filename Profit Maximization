@@ -22,3 +22,4 @@ def profit_maximization (imput):
       
   maximum_profit = high_price - low_price
   return(maximum_profit)
+  
